@@ -1,0 +1,48 @@
+.parent {
+  background-color: #5e88f3;
+  padding: 40px 120px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.innerbox1 {
+  width: 45%;
+  text-align: left;
+}
+
+.innerbox1 h3 {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.text {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .box {
+    flex-direction: column;
+  }
+
+  .logo1 {
+    margin-right: 20px;
+  }
+
+  .innerbox1 {
+    width: 100%;
+  }
+}

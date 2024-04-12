@@ -1,0 +1,30 @@
+<div
+  class="box"
+  *ngFor="let item of items; let i = index"
+  [ngClass]="{ 'second-item': i === 1 }"
+>
+  <div class="child2">
+    <div class="inner1">
+      <p>{{ item.heading }}</p>
+    </div>
+    <br />
+    <div class="inner2">
+      <h3>{{ item.header }}</h3>
+      <p>
+        {{ item.text }}
+      </p>
+      <div *ngIf="i === 2" style="display: flex">
+        <div
+          *ngFor="let icon of item.icons"
+          style="display: flex; align-items: center; margin-left: 5px"
+        >
+          <img src="../../../assets/check.png" alt="check-icon" />
+          <p style="margin-left: 3px">{{ icon }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="child1">
+    <img [src]="'../../../assets/' + item.img" alt="image" />
+  </div>
+</div>

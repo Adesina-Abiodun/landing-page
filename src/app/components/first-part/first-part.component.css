@@ -1,0 +1,59 @@
+.boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1 {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+h3 {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: sans-serif;
+  line-height: 52px;
+}
+
+.box2 {
+  background-image: url("../../../assets/vector.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+span {
+  font-weight: 700;
+  color: #7d97f4;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: sans-serif;
+  line-height: 36px;
+}
+
+.btn1 {
+  border-radius: 10px !important;
+  padding: 15px 30px;
+  color: white;
+  background-color: #7d97f4;
+}
+
+@media screen and (max-width: 1024px) {
+  .box1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .box2 {
+    display: none;
+  }
+
+  .btn1 {
+    margin: 2px auto;
+  }
+}

@@ -1,0 +1,47 @@
+<div class="box container">
+  <div class="child1">
+    <div class="card-container">
+      <div class="row">
+        <div class="col-sm-6" *ngFor="let card of cards">
+          <div class="card">
+            <div class="circle">
+              <img [src]="'../../../assets/' + card.icon" alt="Icon" />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ card.header }}</h5>
+              <p class="card-text">{{ card.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="child2">
+    <div class="inner1">
+      <p>We guarantee</p>
+    </div>
+    <br />
+    <div class="inner2">
+      <h3>Easy Financial services <span>wherever you go</span></h3>
+      <p>
+        Whether you're at home, at the office, or on the go, you can apply for
+        your loan from anywhere. We will be available to help you every step of
+        the way.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="banner">
+  <div class="box1">
+    <h3>40+</h3>
+    <p>staff in different regions</p>
+  </div>
+  <div class="box1">
+    <h3>40M+</h3>
+    <p>total amount loan disbursed</p>
+  </div>
+  <div class="box1">
+    <h3>360+</h3>
+    <p>Approved & disbursed loan applications</p>
+  </div>
+</div>

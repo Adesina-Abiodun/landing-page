@@ -1,0 +1,43 @@
+.navbar {
+  margin: 10px auto 50px auto;
+}
+
+.logo {
+  color: #7d97f4;
+  font-family: "Days One", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.active {
+  color: #7d97f4 !important;
+  font-weight: 700;
+}
+
+.header-list {
+  font-size: 16px;
+}
+
+.btn1 {
+  border-radius: 10px !important;
+  padding: 10px 15px;
+  color: white;
+  background-color: #7d97f4;
+}
+
+.collapse {
+  visibility: visible !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  border: none !important;
+  box-shadow: none !important;
+}

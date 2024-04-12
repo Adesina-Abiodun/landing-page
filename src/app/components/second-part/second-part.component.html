@@ -1,0 +1,44 @@
+<div>
+  <div class="box">
+    <h3>
+      Are you looking for a quick loan? Get your loan in
+      <pre><span>24 hours⏳</span></pre>
+    </h3>
+  </div>
+  <br />
+  <br />
+  <br />
+  <div class="box2">
+    <div>
+      <div
+        class="innerbox1"
+        *ngFor="let item of items; let i = index"
+        [ngClass]="{ 'last-item': i === items.length - 1 }"
+      >
+        <div class="child1">
+          <img
+            src="../../../assets/Ellipse 482.svg"
+            alt=""
+            [ngStyle]="{
+              'background-color': i === items.length - 2 ? '#F2F2F2' : '#7D97F4'
+            }"
+          />
+          <div
+            class="line"
+            [ngStyle]="{
+              'background-color': i === items.length - 2 ? '#F2F2F2' : '#7D97F4'
+            }"
+          ></div>
+        </div>
+        <div class="child2">
+          <h3>{{ item.title }}</h3>
+          <!-- <br /> -->
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="innerbox2">
+      <img src="../../../assets/Documents-rafiki 1.png" alt="image" />
+    </div>
+  </div>
+</div>
